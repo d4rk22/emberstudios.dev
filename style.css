@@ -131,7 +131,8 @@ footer {
   color: var(--text-muted);
 }
 
-footer a {
+footer a,
+footer a:visited {
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s;
@@ -163,8 +164,12 @@ footer a:hover {
   font-size: 1.35rem;
   font-weight: 600;
   color: var(--text);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1a1a1a;
+  border-left: 3px solid var(--ember-1);
+  padding-left: 0.75rem;
 }
 
 .page h3 {
@@ -196,7 +201,8 @@ footer a:hover {
   margin-bottom: 0.4rem;
 }
 
-.page a {
+.page a,
+.page a:visited {
   color: var(--ember-1);
   text-decoration: none;
   transition: color 0.2s;
@@ -205,6 +211,15 @@ footer a:hover {
 .page a:hover {
   color: var(--ember-2);
   text-decoration: underline;
+}
+
+.page strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.page li::marker {
+  color: var(--ember-1);
 }
 
 .back-link {
@@ -221,9 +236,16 @@ footer a:hover {
 
 .contact {
   background: #1a1a1a;
+  border: 1px solid #252525;
   padding: 1.5rem;
   border-radius: 10px;
   margin-top: 2rem;
+}
+
+.contact h2 {
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .page-footer {
