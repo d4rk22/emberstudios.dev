@@ -108,6 +108,7 @@ h1 {
   display: flex;
   gap: 1.25rem;
   justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 .links a {
@@ -121,6 +122,63 @@ h1 {
 .links a:hover {
   color: var(--ember-1);
   box-shadow: 0 0 16px rgba(255, 107, 53, 0.25);
+}
+
+/* feature cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ember-1);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* site nav */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.site-nav a,
+.site-nav a:visited {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: var(--ember-1);
 }
 
 /* footer */
@@ -140,6 +198,10 @@ footer a:visited {
 
 footer a:hover {
   color: var(--ember-1);
+}
+
+.footer-nav {
+  margin-top: 0.5rem;
 }
 
 /* ---- page layout (privacy, etc.) ---- */
@@ -232,6 +294,24 @@ footer a:hover {
   color: var(--text-muted);
   font-size: 0.85rem;
   margin-bottom: 2rem;
+}
+
+.coming-soon {
+  background: #1a1a1a;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon h2 {
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+  color: var(--ember-1);
+  font-size: 1.5rem;
 }
 
 .contact {
