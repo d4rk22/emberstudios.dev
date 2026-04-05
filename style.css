@@ -312,22 +312,44 @@ footer a:hover {
   margin-bottom: 2rem;
 }
 
-.coming-soon {
+.app-showcase {
   background: #1a1a1a;
   border: 1px solid #252525;
   border-radius: 10px;
   padding: 2rem;
-  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.coming-soon h2 {
+.app-showcase h2 {
   border: none;
   padding-top: 0;
   margin-top: 0;
   color: var(--ember-1);
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.app-subtitle {
+  text-align: center;
+  color: var(--text-muted) !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.screenshot-gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-gallery img {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid #252525;
 }
 
 .contact {
