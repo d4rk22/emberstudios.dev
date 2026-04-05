@@ -124,6 +124,71 @@ h1 {
   box-shadow: 0 0 16px rgba(255, 107, 53, 0.25);
 }
 
+/* featured game */
+.featured-game {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.game-feature {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #1a1a1a;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+}
+
+.game-feature:hover {
+  border-color: var(--ember-1);
+}
+
+.game-feature-info {
+  flex: 1;
+}
+
+.game-feature-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ember-1);
+  margin-bottom: 0.25rem;
+}
+
+.game-feature-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.game-feature-info p:last-child {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.game-feature-img {
+  width: 120px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px solid #252525;
+}
+
+@media (max-width: 600px) {
+  .game-feature {
+    flex-direction: column;
+  }
+
+  .game-feature-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
 /* feature cards */
 .cards {
   display: grid;
@@ -312,7 +377,7 @@ footer a:hover {
   margin-bottom: 2rem;
 }
 
-.app-showcase {
+.game-showcase {
   background: #1a1a1a;
   border: 1px solid #252525;
   border-radius: 10px;
@@ -321,7 +386,7 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
-.app-showcase h2 {
+.game-showcase h2 {
   border: none;
   padding-top: 0;
   margin-top: 0;
@@ -330,7 +395,7 @@ footer a:hover {
   text-align: center;
 }
 
-.app-subtitle {
+.game-subtitle {
   text-align: center;
   color: var(--text-muted) !important;
   font-size: 0.95rem !important;
