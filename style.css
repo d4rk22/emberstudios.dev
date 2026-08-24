@@ -178,6 +178,10 @@ h1 {
   border: 2px solid #252525;
 }
 
+.game-feature-img--wide {
+  width: 180px;
+}
+
 @media (max-width: 600px) {
   .game-feature {
     flex-direction: column;
@@ -415,6 +419,18 @@ footer a:hover {
   flex-shrink: 0;
   border-radius: 12px;
   border: 2px solid #252525;
+}
+
+/* landscape (TV) screenshots */
+.screenshot-gallery--wide img {
+  width: 380px;
+  max-width: 100%;
+}
+
+.fine-print {
+  color: var(--text-muted) !important;
+  font-size: 0.8rem !important;
+  margin-top: 1rem;
 }
 
 .contact {
