@@ -5,61 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apps — Ember Studios</title>
   <meta name="description" content="Apps from Ember Studios, including Airdate — air dates, auto-skip, and trailers for your Plex library on Apple TV.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260906">
 </head>
 <body>
-  <main>
-    <div class="page">
-      <a href="/" class="back-link">&larr; Back to Ember Studios</a>
-
-      <h1>Our Apps</h1>
-      <p>Apps for the Apple ecosystem, crafted with care.</p>
-
-      <div class="game-showcase">
-        <h2>Airdate</h2>
-        <p class="game-subtitle">Air Dates, Auto-Skip &amp; Trailers for Plex on Apple TV</p>
-        <p>Airdate is a native Apple TV app for browsing and watching your personal Plex library — with the features other clients leave out. See exactly when the next episode of your favorite shows airs, straight from the home screen. Let intros and credits skip themselves and roll right into the next episode. And browse a poster wall of trailers for upcoming theatrical releases.</p>
-
-        <div class="screenshot-gallery screenshot-gallery--wide">
-          <img src="assets/airdate_1.jpeg" alt="Airdate home screen with Continue Watching and Airing Soon rows" width="380">
-          <img src="assets/airdate_2.jpeg" alt="Airdate show page displaying when new episodes air" width="380">
-          <img src="assets/airdate_3.jpeg" alt="Airdate trailers screen with upcoming movie posters and release dates" width="380">
-        </div>
-
-        <ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ember Studios home">
+      <img src="logo.png" alt="" width="36" height="50">
+      <span>Ember Studios</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="games.html">Games</a>
+      <a href="apps.html" aria-current="page">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1" class="product-page">
+    <a href="index.html#our-work" class="back-link">Back to our games &amp; apps</a>
+    <section class="product product-airdate product-detail" aria-labelledby="product-title">
+      <div class="product-copy"><p class="platform">For Apple TV</p><h1 id="product-title">Airdate</h1><p class="product-pitch">Your next episode. Right at home.</p><p>A native Apple TV app for your Plex library. See what airs next, let the intros skip themselves, and find your next movie night.</p><p class="availability"><span class="status">In beta</span> Coming soon to TestFlight.</p><a class="button button-light" href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow development on X</a></div>
+      <div class="tv-stage"><div class="tv"><img src="assets/airdate_1.jpeg" alt="Airdate home screen with Continue Watching and Airing Soon" width="1280" height="720" fetchpriority="high"></div><div class="tv-stand" aria-hidden="true"></div></div>
+    </section>
+    <section class="product-features" aria-labelledby="features-title"><div><h2 id="features-title">Make yourself comfortable.</h2><p>The familiar library you love, with the little things taken care of.</p></div><ul>
           <li><strong>Air Dates Everywhere:</strong> An "Airing Soon" row on Home, air-date badges across your library, and exactly when new episodes arrive right on every show page</li>
           <li><strong>Auto-Skip &amp; Auto-Advance:</strong> Intros and credits skip themselves, then playback flows into the next episode with a countdown — with per-show overrides</li>
           <li><strong>Trailers:</strong> Browse upcoming theatrical movies as a poster wall, sorted by release date</li>
           <li><strong>Truly Native:</strong> Built with Swift and SwiftUI for tvOS, with smooth AVPlayer playback and watch progress synced to your Plex account</li>
-        </ul>
-
-        <p><strong>Status:</strong> In beta — coming soon to TestFlight.</p>
-        <p class="fine-print">Airdate requires a Plex account and access to a Plex Media Server. Airdate is an independent project and is not affiliated with, endorsed by, or sponsored by Plex, Inc.</p>
-      </div>
-
-      <div class="contact">
-        <h2>Stay Updated</h2>
-        <p>Follow us on <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">X (@EmberStudiosHQ)</a> for release announcements and behind-the-scenes updates.</p>
-        <p>Or drop us a line at <a href="mailto:hello@emberstudios.dev">hello@emberstudios.dev</a>.</p>
-      </div>
-    </div>
+        </ul></section>
+    <section class="screenshots-section" aria-labelledby="screenshots-title"><h2 id="screenshots-title">Take a closer look.</h2><p>Select a screenshot to see it full size.</p><div class="screenshots screenshots-airdate"><figure><a href="assets/airdate_1.jpeg" aria-label="View full-size Airdate screenshot 1"><img src="assets/airdate_1.jpeg" alt="Airdate home screen with Continue Watching and Airing Soon" width="1280" height="720" loading="lazy"></a><figcaption>Pick up where you left off</figcaption></figure><figure><a href="assets/airdate_2.jpeg" aria-label="View full-size Airdate screenshot 2"><img src="assets/airdate_2.jpeg" alt="Airdate show page displaying upcoming air dates" width="1280" height="720" loading="lazy"></a><figcaption>Know when the next episode arrives</figcaption></figure><figure><a href="assets/airdate_3.jpeg" aria-label="View full-size Airdate screenshot 3"><img src="assets/airdate_3.jpeg" alt="Airdate upcoming movie trailers and release dates" width="1280" height="720" loading="lazy"></a><figcaption>Find your next movie night</figcaption></figure></div></section>
+    <p class="fine-print">Airdate requires a Plex account and access to a Plex Media Server. Airdate is an independent project and is not affiliated with, endorsed by, or sponsored by Plex, Inc.</p>
+    <section class="hello" aria-labelledby="hello-title"><div><h2 id="hello-title">Have something in mind?</h2><p>Questions, feedback, and ideas are always welcome.</p></div><a class="button button-outline" href="contact.html">Get in touch</a></section>
   </main>
-  <footer>
-    <p>&copy; 2026 Ember Studios, LLC</p>
-    <p class="footer-nav">
-      <a href="about.html">About</a> &middot;
-      <a href="games.html">Games</a> &middot;
-      <a href="apps.html">Apps</a> &middot;
-      <a href="contact.html">Contact</a> &middot;
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">Ember Studios</a><p>Small studio. A little spark.</p></div>
+    <nav aria-label="Footer navigation">
+      <a href="contact.html">Get in touch</a>
+      <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow on X</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Ember Studios, LLC</p>
   </footer>
 </body>
 </html>

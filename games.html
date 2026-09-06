@@ -5,58 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Games — Ember Studios</title>
   <meta name="description" content="iOS games from Ember Studios. See what we're building.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260906">
 </head>
 <body>
-  <main>
-    <div class="page">
-      <a href="/" class="back-link">&larr; Back to Ember Studios</a>
-
-      <h1>Our Games</h1>
-      <p>Fun, engaging games for iPhone and iPad, crafted with care.</p>
-
-      <div class="game-showcase">
-        <h2>Meowers</h2>
-        <p class="game-subtitle">Mice vs. Cats Tower Defense</p>
-        <p>Defend your territory against waves of adorable but relentless cats! Place mouse towers along the path to shoot cheese and stop the feline invasion. Earn gold from defeated cats to build and upgrade your defenses. Each tower has unique abilities — from rapid-fire cheese launchers to electric zappers and yarn slingers.</p>
-
-        <div class="screenshot-gallery">
-          <img src="assets/meowers_1.jpeg" alt="Meowers main menu showing game features" width="200">
-          <img src="assets/meowers_2.jpeg" alt="Meowers gameplay with mouse towers defending against cats" width="200">
-          <img src="assets/meowers_3.jpeg" alt="Meowers gameplay with upgraded towers in action" width="200">
-        </div>
-
-        <ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ember Studios home">
+      <img src="logo.png" alt="" width="36" height="50">
+      <span>Ember Studios</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="games.html" aria-current="page">Games</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1" class="product-page">
+    <a href="index.html#our-work" class="back-link">Back to our games &amp; apps</a>
+    <section class="product product-meowers product-detail" aria-labelledby="product-title">
+      <div class="product-copy"><p class="platform">For iPhone &amp; iPad</p><h1 id="product-title">Meowers</h1><p class="product-pitch">Small mice. Big defenses.</p><p>A backyard tower defense game where the mice call the shots. Build your defenses, launch cheese, and stop the feline invasion.</p><p class="availability">Follow along for release announcements.</p><a class="button button-dark" href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow development on X</a></div>
+      <div class="phone-stage"><div class="phone phone-secondary"><img src="assets/meowers_1.jpeg" alt="Meowers title screen" width="591" height="1280"></div><div class="phone phone-primary"><img src="assets/meowers_2.jpeg" alt="Meowers mouse towers defending against cats" width="591" height="1280" fetchpriority="high"></div></div>
+    </section>
+    <section class="product-features" aria-labelledby="features-title"><div><h2 id="features-title">A little cute. A lot of strategy.</h2><p>Five tower types, one winding path, and plenty of cats with other plans.</p></div><ul>
           <li><strong>5 Tower Types:</strong> Basic, Rapid, Heavy, Electric, and Yarn — each with unique strengths</li>
           <li><strong>Strategic Depth:</strong> Place towers wisely along the winding path to maximize your defense</li>
           <li><strong>Charming Art:</strong> Cute hand-drawn cats, mice, and a colorful world full of flowers</li>
           <li><strong>Built for iOS:</strong> Native iPhone and iPad experience with smooth touch controls</li>
-        </ul>
-      </div>
+        </ul></section>
+    <section class="screenshots-section" aria-labelledby="screenshots-title"><h2 id="screenshots-title">Take a closer look.</h2><p>Select a screenshot to see it full size.</p><div class="screenshots screenshots-meowers"><figure><a href="assets/meowers_1.jpeg" aria-label="View full-size Meowers screenshot 1"><img src="assets/meowers_1.jpeg" alt="Meowers title screen and game features" width="591" height="1280" loading="lazy"></a><figcaption>Meet the mice</figcaption></figure><figure><a href="assets/meowers_2.jpeg" aria-label="View full-size Meowers screenshot 2"><img src="assets/meowers_2.jpeg" alt="Mouse towers defending the garden path" width="591" height="1280" loading="lazy"></a><figcaption>Plan your defense</figcaption></figure><figure><a href="assets/meowers_3.jpeg" aria-label="View full-size Meowers screenshot 3"><img src="assets/meowers_3.jpeg" alt="Upgraded mouse towers battling waves of cats" width="591" height="1280" loading="lazy"></a><figcaption>Keep the cats at bay</figcaption></figure></div></section>
 
-      <div class="contact">
-        <h2>Stay Updated</h2>
-        <p>Follow us on <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">X (@EmberStudiosHQ)</a> for release announcements and behind-the-scenes updates.</p>
-        <p>Or drop us a line at <a href="mailto:hello@emberstudios.dev">hello@emberstudios.dev</a>.</p>
-      </div>
-    </div>
+    <section class="hello" aria-labelledby="hello-title"><div><h2 id="hello-title">Have something in mind?</h2><p>Questions, feedback, and ideas are always welcome.</p></div><a class="button button-outline" href="contact.html">Get in touch</a></section>
   </main>
-  <footer>
-    <p>&copy; 2026 Ember Studios, LLC</p>
-    <p class="footer-nav">
-      <a href="about.html">About</a> &middot;
-      <a href="games.html">Games</a> &middot;
-      <a href="apps.html">Apps</a> &middot;
-      <a href="contact.html">Contact</a> &middot;
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">Ember Studios</a><p>Small studio. A little spark.</p></div>
+    <nav aria-label="Footer navigation">
+      <a href="contact.html">Get in touch</a>
+      <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow on X</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Ember Studios, LLC</p>
   </footer>
 </body>
 </html>

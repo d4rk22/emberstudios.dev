@@ -9,93 +9,81 @@
   <meta property="og:description" content="Indie studio crafting games and apps for Apple platforms.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://emberstudios.dev">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260906">
 </head>
 <body>
-  <main>
-    <div class="container">
-      <div class="logo-wrap">
-        <img src="logo.png" alt="Ember Studios logo" class="logo" width="96" height="96">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ember Studios home">
+      <img src="logo.png" alt="" width="36" height="50">
+      <span>Ember Studios</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="games.html">Games</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1" class="home-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Games with personality.<br>Apps that feel at home.</h1>
+        <p>Little worlds to get lost in. Thoughtful tools for everyday life.<br class="desktop-break"> Independently built for iPhone, iPad, and Apple TV.</p>
+        <a class="button button-primary" href="#our-work">Explore our games &amp; apps</a>
       </div>
-      <h1>Ember Studios</h1>
-      <p class="tagline">Crafting games that ignite imagination</p>
-      <p class="about">
-        Ember Studios is a one-person indie studio born from a lifelong love of
-        technology. Since picking up an original iPhone in 2007, the dream was
-        always to build for it — and now that dream is a reality. Everything
-        we make is crafted with care.
-      </p>
-      <section class="featured-game">
-        <a href="games.html" class="game-feature">
-          <div class="game-feature-info">
-            <h3>Meowers</h3>
-            <p class="game-feature-subtitle">Mice vs. Cats Tower Defense</p>
-            <p>Defend against waves of adorable cats! Place mouse towers, shoot cheese, and upgrade your defenses with unique abilities.</p>
-          </div>
-          <img src="assets/meowers_2.jpeg" alt="Meowers gameplay" class="game-feature-img">
-        </a>
-        <a href="apps.html" class="game-feature">
-          <div class="game-feature-info">
-            <h3>Airdate</h3>
-            <p class="game-feature-subtitle">Air Dates &amp; Auto-Skip for Plex on Apple TV</p>
-            <p>See when your shows air next, skip intros and credits automatically, and browse trailers for upcoming movies — all in a beautifully native Apple TV app for your Plex library.</p>
-          </div>
-          <img src="assets/airdate_1.jpeg" alt="Airdate home screen on Apple TV" class="game-feature-img game-feature-img--wide">
-        </a>
-      </section>
+      <div class="hero-mascot"><img src="logo.png" alt="Ember, our smiling flame mascot" width="691" height="972" fetchpriority="high"></div>
+    </section>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Games &amp; Apps</h3>
-          <p>Fun games for iPhone and iPad, and polished apps for Apple TV — built to delight.</p>
+    <section class="work" id="our-work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title">A little of what we make.</h2><p>From your pocket to your living room.</p></div>
+      <article class="product product-meowers">
+        <div class="product-copy">
+          <p class="platform">For iPhone &amp; iPad</p>
+          <h3>Meowers</h3>
+          <p class="product-pitch">Small mice.<br>Big defenses.</p>
+          <p>Meet your new favorite backyard battle. Build mouse towers, launch cheese, and outsmart a very determined parade of cats.</p>
+          <a class="button button-dark" href="games.html">Meet Meowers</a>
         </div>
-        <div class="card">
-          <h3>Made with Care</h3>
-          <p>Every pixel considered, every interaction polished. Quality over quantity.</p>
+        <div class="phone-stage" aria-label="Meowers game preview">
+          <div class="phone phone-secondary"><img src="assets/meowers_1.jpeg" alt="Meowers title screen with its cats and mice" width="591" height="1280" loading="lazy"></div>
+          <div class="phone phone-primary"><img src="assets/meowers_2.jpeg" alt="Mouse towers defending a winding garden path in Meowers" width="591" height="1280" loading="lazy"></div>
         </div>
-        <div class="card">
-          <h3>Indie Spirit</h3>
-          <p>Small studio, big ambitions — built with love, not by committee.</p>
+      </article>
+      <article class="product product-airdate">
+        <div class="product-copy">
+          <p class="platform">For Apple TV <span class="status">In beta</span></p>
+          <h3>Airdate</h3>
+          <p class="product-pitch">Your next episode.<br>Right at home.</p>
+          <p>Your Plex library, with a few thoughtful extras. Know what airs next, skip the intros, and settle in for something good.</p>
+          <a class="button button-light" href="apps.html">Discover Airdate</a>
+          <p class="availability">Coming soon to TestFlight.</p>
         </div>
-      </section>
+        <div class="tv-stage"><div class="tv"><img src="assets/airdate_1.jpeg" alt="Airdate on Apple TV showing Continue Watching and Airing Soon" width="1280" height="720" loading="lazy"></div><div class="tv-stand" aria-hidden="true"></div></div>
+      </article>
+    </section>
 
-      <nav class="site-nav" aria-label="Site navigation">
-        <a href="about.html">About</a>
-        <a href="games.html">Games</a>
-        <a href="apps.html">Apps</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <nav class="links" aria-label="Social links">
-        <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer" aria-label="Follow on X">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
-        </a>
-        <a href="mailto:hello@emberstudios.dev" aria-label="Send email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-        </a>
-      </nav>
-    </div>
+    <section class="founder" aria-labelledby="founder-title">
+      <div class="founder-photo"><img src="headshot.jpg" alt="The developer behind Ember Studios" width="400" height="499" loading="lazy"></div>
+      <div><h2 id="founder-title">One person.<br>A lifelong itch to make things.</h2>
+        <p>My first iPhone in 2007 sparked a dream of building for it. Ember Studios is that dream taking shape: games and apps I’m excited to make, and even more excited to share.</p>
+        <a class="text-link" href="about.html">A little more about the studio</a>
+      </div>
+    </section>
+    <section class="hello" aria-labelledby="hello-title"><div><h2 id="hello-title">Good things start with a hello.</h2><p>A question, an idea, or a cat joke. We’re all ears.</p></div><a class="button button-outline" href="contact.html">Say hello</a></section>
   </main>
-  <footer>
-    <p>&copy; 2026 Ember Studios, LLC</p>
-    <p class="footer-nav">
-      <a href="about.html">About</a> &middot;
-      <a href="games.html">Games</a> &middot;
-      <a href="apps.html">Apps</a> &middot;
-      <a href="contact.html">Contact</a> &middot;
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">Ember Studios</a><p>Small studio. A little spark.</p></div>
+    <nav aria-label="Footer navigation">
+      <a href="contact.html">Get in touch</a>
+      <a href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow on X</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Ember Studios, LLC</p>
   </footer>
 </body>
 </html>
