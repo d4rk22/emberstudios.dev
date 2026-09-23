@@ -106,6 +106,36 @@ p { text-wrap: pretty; }
 .screenshots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
 .screenshots-meowers { max-width: 780px; margin-inline: auto; gap: 40px; }
 .screenshots figcaption { font-size: 13px; color: var(--muted); margin-top: 13px; }
+.app-icon { display: block; width: 104px; height: auto; aspect-ratio: 5 / 3; object-fit: cover; border-radius: 12px; margin-bottom: 22px; box-shadow: 0 14px 26px -12px #000a, 0 0 0 1px #ffffff14; }
+.product-detail .app-icon { width: 128px; border-radius: 14px; }
+.eyebrow { font-size: 13px; font-weight: 550; color: var(--ember); display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.levelling, .cast-feature { display: grid; align-items: center; gap: 60px; border-radius: 24px; padding: 56px; margin-top: 24px; }
+.levelling { grid-template-columns: 1fr 1fr; background: linear-gradient(135deg, #2b2016, #1d201b 70%); border: 1px solid #4a3a2b; }
+.levelling h2, .cast-feature h2 { font-size: 40px; letter-spacing: -.035em; line-height: 1.1; margin-bottom: 18px; }
+.levelling-copy > p, .cast-copy > p { color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 440px; }
+.levelling ul { list-style: none; padding: 0; margin: 22px 0; display: grid; gap: 12px; max-width: 440px; }
+.levelling li { color: var(--text); font-size: 15px; line-height: 1.55; padding-left: 26px; position: relative; }
+.levelling li::before { content: ""; position: absolute; left: 0; top: .6em; width: 12px; height: 2px; border-radius: 2px; background: var(--ember); }
+.levelling .levelling-note { font-size: 13px; }
+.levelling .status { color: var(--text); border-color: #7a6450; }
+.levelling-chart { margin: 0; min-width: 0; }
+.levelling-chart svg { width: 100%; height: auto; display: block; }
+.levelling-chart rect { fill: var(--ember); }
+.levelling-chart rect.trim { fill: none; stroke: #ff9b6280; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.levelling-chart .target { stroke: #f3f4ed55; stroke-width: 1; stroke-dasharray: 2 5; }
+.levelling-chart text { fill: var(--muted); font-size: 13px; font-family: inherit; }
+.levelling-chart figcaption { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.key { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+.key-trim { border: 1.5px dashed #ff9b62aa; }
+.key-level { background: var(--ember); margin-left: 12px; }
+.cast-feature { grid-template-columns: .8fr 1.2fr; background: #242c38; color: #f4f5f9; }
+.cast-feature .eyebrow { color: #c6d7a0; }
+.cast-feature .cast-copy > p { color: #c0cbdd; }
+.cast-shots { display: grid; gap: 18px; min-width: 0; }
+.cast-shots figure { margin: 0; min-width: 0; }
+.cast-shots a { display: block; border-radius: 12px; }
+.cast-shots img { width: 100%; border-radius: 12px; border: 1px solid #546177; box-shadow: 0 24px 40px -22px #000c; }
+.cast-shots figcaption { font-size: 13px; color: #c0cbdd; margin-top: 10px; }
 .fine-print { max-width: 750px; color: var(--muted); font-size: 12px; margin-bottom: 45px; }
 /* Studio, contact, and legal pages */
 main:has(> .page) { width: min(760px, calc(100% - 80px)); margin-inline: auto; padding: 42px 0 72px; }
@@ -133,6 +163,8 @@ main:has(> .page) { width: min(760px, calc(100% - 80px)); margin-inline: auto; p
   .phone { flex-basis: 155px; border-radius: 22px; }
   .phone img { border-radius: 16px; }
   .product-features { gap: 45px; }
+  .levelling, .cast-feature { padding: 40px; gap: 40px; }
+  .levelling h2, .cast-feature h2 { font-size: 34px; }
 }
 @media (max-width: 760px) {
   .site-header, .home-main, .product-page, .site-footer { width: calc(100% - 40px); }
@@ -158,6 +190,7 @@ main:has(> .page) { width: min(760px, calc(100% - 80px)); margin-inline: auto; p
   .founder h2 { font-size: 30px; }
   .product-features { grid-template-columns: 1fr; gap: 35px; margin-block: 60px; }
   .product-features > div p { max-width: 100%; }
+  .levelling, .cast-feature { grid-template-columns: 1fr; padding: 36px; }
   .screenshots { gap: 18px; }
   .screenshots-airdate { grid-template-columns: 1fr; }
   .screenshots-meowers { gap: 15px; }
@@ -192,6 +225,9 @@ main:has(> .page) { width: min(760px, calc(100% - 80px)); margin-inline: auto; p
   .screenshots-meowers { grid-template-columns: 1fr; max-width: 260px; gap: 30px; }
   .screenshots figcaption { text-align: center; }
   .contact { padding: 24px; }
+  .levelling, .cast-feature { padding: 28px 24px; border-radius: 19px; gap: 30px; }
+  .levelling h2, .cast-feature h2 { font-size: 30px; }
+  .app-icon, .product-detail .app-icon { width: 92px; border-radius: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

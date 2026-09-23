@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apps — Ember Studios</title>
-  <meta name="description" content="Apps from Ember Studios, including Airdate — air dates, auto-skip, and trailers for your Plex library on Apple TV.">
+  <meta name="description" content="Apps from Ember Studios, including Airdate — volume levelling, in-player cast, air dates, and auto-skip for your Plex library on Apple TV.">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css?v=20260906">
+  <link rel="stylesheet" href="style.css?v=20260923">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,10 +28,47 @@
   <main id="main" tabindex="-1" class="product-page">
     <a href="index.html#our-work" class="back-link">Back to our games &amp; apps</a>
     <section class="product product-airdate product-detail" aria-labelledby="product-title">
-      <div class="product-copy"><p class="platform">For Apple TV</p><h1 id="product-title">Airdate</h1><p class="product-pitch">Your next episode. Right at home.</p><p>A native Apple TV app for your Plex library. See what airs next, let the intros skip themselves, and find your next movie night.</p><p class="availability"><span class="status">In beta</span> Coming soon to TestFlight.</p><a class="button button-light" href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow development on X</a></div>
+      <div class="product-copy"><img class="app-icon" src="assets/airdate-icon.jpeg" alt="Airdate app icon" width="640" height="384"><p class="platform">For Apple TV</p><h1 id="product-title">Airdate</h1><p class="product-pitch">Your next episode. Right at home.</p><p>A native Apple TV app for your Plex library. Every episode plays at the same volume, the cast is one swipe away, and you always know what airs next.</p><p class="availability"><span class="status">In beta</span> Now in beta on TestFlight.</p><a class="button button-light" href="https://x.com/EmberStudiosHQ" target="_blank" rel="noopener noreferrer">Follow development on X</a></div>
       <div class="tv-stage"><div class="tv"><img src="assets/airdate_1.jpeg" alt="Airdate home screen with Continue Watching and Airing Soon" width="1280" height="720" fetchpriority="high"></div><div class="tv-stand" aria-hidden="true"></div></div>
     </section>
+    <section class="levelling" aria-labelledby="levelling-title">
+      <div class="levelling-copy">
+        <p class="eyebrow">Volume Levelling <span class="status">Beta</span></p>
+        <h2 id="levelling-title">Put the remote down.</h2>
+        <p>One episode whispers, the next one shouts. Airdate evens out the volume from one episode and movie to the next, so you can stop reaching for the remote.</p>
+        <ul>
+          <li>Uses your Plex server’s own loudness analysis when it has one</li>
+          <li>Otherwise measures upcoming episodes in the background while you browse, never during playback</li>
+          <li>Turns loud titles down to match, and never changes the volume mid-episode</li>
+        </ul>
+        <p class="levelling-note">Turn it on in Settings &gt; Playback.</p>
+      </div>
+      <figure class="levelling-chart">
+        <svg viewBox="0 0 440 260" role="img" aria-labelledby="levelling-chart-title">
+          <title id="levelling-chart-title">Six episodes with uneven loudness. With levelling, the louder episodes are turned down to meet the quieter ones.</title>
+          <line class="target" x1="16" x2="424" y1="104" y2="104"/>
+          <g class="bar"><rect class="trim" x="28" y="44" width="44" height="60" rx="6"/><rect x="28" y="104" width="44" height="126" rx="6"/></g>
+          <g class="bar"><rect x="96" y="104" width="44" height="126" rx="6"/></g>
+          <g class="bar"><rect class="trim" x="164" y="70" width="44" height="34" rx="6"/><rect x="164" y="104" width="44" height="126" rx="6"/></g>
+          <g class="bar"><rect x="232" y="104" width="44" height="126" rx="6"/></g>
+          <g class="bar"><rect class="trim" x="300" y="24" width="44" height="80" rx="6"/><rect x="300" y="104" width="44" height="126" rx="6"/></g>
+          <g class="bar"><rect class="trim" x="368" y="86" width="44" height="18" rx="6"/><rect x="368" y="104" width="44" height="126" rx="6"/></g>
+          <text x="16" y="254">Six episodes, one comfortable volume</text>
+        </svg>
+        <figcaption><span class="key key-trim"></span>Turned down <span class="key key-level"></span>What you hear</figcaption>
+      </figure>
+    </section>
+    <section class="cast-feature" aria-labelledby="cast-title">
+      <div class="cast-copy">
+        <p class="eyebrow">In the player</p>
+        <h2 id="cast-title">Wait, who is that?</h2>
+        <p>Swipe down during an episode and open the Cast tab to see who’s in it. Select a face to open their page and everything of theirs in your library, then head right back to the paused episode.</p>
+      </div>
+      <div class="cast-shots"><figure><a href="assets/airdate_cast_1.jpeg" aria-label="View full-size screenshot of the Cast tab"><img src="assets/airdate_cast_1.jpeg" alt="The Cast tab open over a paused episode, showing a row of cast headshots with names and roles" width="1280" height="720" loading="lazy"></a><figcaption>Swipe down for the Cast tab</figcaption></figure><figure><a href="assets/airdate_cast_2.jpeg" aria-label="View full-size screenshot of an actor page"><img src="assets/airdate_cast_2.jpeg" alt="An actor page opened from the player, listing the titles in your library they appear in" width="1280" height="720" loading="lazy"></a><figcaption>Select a face to see what else they’re in</figcaption></figure></div>
+    </section>
     <section class="product-features" aria-labelledby="features-title"><div><h2 id="features-title">Make yourself comfortable.</h2><p>The familiar library you love, with the little things taken care of.</p></div><ul>
+          <li><strong>Volume Levelling:</strong> Loud episodes are turned down to match their neighbours, using Plex’s own loudness analysis or Airdate’s background measurement</li>
+          <li><strong>Cast in the Player:</strong> Swipe down mid-episode to see the cast, then jump to anyone’s page and filmography without losing your place</li>
           <li><strong>Air Dates Everywhere:</strong> An "Airing Soon" row on Home, air-date badges across your library, and exactly when new episodes arrive right on every show page</li>
           <li><strong>Auto-Skip &amp; Auto-Advance:</strong> Intros and credits skip themselves, then playback flows into the next episode with a countdown — with per-show overrides</li>
           <li><strong>Trailers:</strong> Browse upcoming theatrical movies as a poster wall, sorted by release date</li>
